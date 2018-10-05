@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Ubuntu');
+
+// font weights
+$font-weight-light: 100;
+$font-weight-regular: 400;
+$font-weight-bold: 900;
+
+// font size
+$font-size-small: 0.8rem;
+$font-size-medium: 1rem;
+$font-size-large: 1.2rem;
+$font-size-xlarge: 1.5rem;
+
+// base font
+$base-font-family: 'Ubuntu', sans-serif;
+$base-font-weight: $font-weight-regular;
+$base-font-size: $font-size-medium;
+$base-line-height: 1.5;
+
+// colors
+// $primary-color: #101727;
+// $secondary-color: #ff611d;
+// $tertiary-color: #2F85CE;
+// $quaternary-color: #00B1B1;
+$light-grey: #cccfd3;
+
+// $primary-color: #07889b;
+// $secondary-color: #e37222;
+// $tertiary-color: #66b9bf;
+// $quaternary-color: #eeaa7b;
+
+// $primary-color: #05386b;
+// $secondary-color: #379683;
+// $tertiary-color: #5cdb95;
+// $quaternary-color: #8ee4af;
+
+$primary-color: #374785;
+$secondary-color: #f76c6c;
+$tertiary-color: #f8e9a1;
+$quaternary-color: #a8d0e6;

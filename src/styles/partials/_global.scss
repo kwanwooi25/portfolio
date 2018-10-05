@@ -1,0 +1,38 @@
+.section-title {
+  display: inline-block;
+  font-size: 2rem;
+  font-family: 'Carter One', cursive;
+  margin: 1rem auto 1.5rem;
+  padding-bottom: .75rem;
+  text-transform: uppercase;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: 1s;
+
+  &::after {
+    content: '';
+    border-style: solid;
+    border-bottom-width: 7px;
+    border-image: linear-gradient(to right, rgba($primary-color, 0.5), $primary-color);
+    border-image-slice: 1;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 1s;
+  }
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.button {
+  @extend %button;
+}

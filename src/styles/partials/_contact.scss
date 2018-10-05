@@ -1,0 +1,142 @@
+#contact::after {
+  display: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+
+  input,
+  textarea {
+    border: none;
+    border-bottom: 3px solid rgba($primary-color, 0.3);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    height: 3rem;
+    padding: .5rem;
+    outline: none;
+    transition: .25s;
+    resize: none;
+
+    &:focus {
+      border-color: $primary-color;
+    }
+  }
+
+  textarea:focus {
+    height: 12rem;
+  }
+
+  .submit {
+    display: flex;
+
+    &__message {
+      flex: 1;
+    }
+
+    button {
+      @extend %button;
+    }
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  a {
+    background: $primary-color;
+    border-radius: 50%;
+    color: white;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: background .2s,
+                transform .75s,
+                opacity .75s;
+
+    &.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background: $secondary-color;
+    }
+
+    svg {
+      fill: white;
+    }
+  }
+}
+
+.modal {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size: $font-size-large;
+  width: 90%;
+  max-width: 480px;
+  min-height: 10rem;
+  position: relative;
+  top: 20%;
+  margin: auto;
+  padding: 2rem 1rem;
+  animation: .5s from-top;
+  @extend %flex-center;
+  
+  &-bg {
+    background: rgba(black, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  &--sending {
+    @extend %flex-center;
+  }
+
+  &--sent {
+    @extend %flex-center;
+
+    p {
+      align-self: flex-start;
+      margin-bottom: .5rem;
+    }
+
+    button {
+      @extend %button;
+      margin-top: 2rem;
+
+      &:hover {
+        background: $primary-color;
+        color: white;
+      }
+    }
+  }
+}
+
+@keyframes from-top {
+  from {
+    top: -20%;
+    opacity: 0;
+  }
+  to {
+    top: 20%;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,76 @@
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+
+  li {
+    width: 100%;
+    position: relative;
+    transform: scale(0);
+
+    &.show {
+      animation: 0.35s pop-up forwards;
+    }
+  
+    &:hover {
+      .ring__logo__path {
+        opacity: 0.2;
+        transform: scale(0.8);
+        transform-origin: 50% 50%;
+      }
+  
+      .ring__info {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    
+    .ring__circle {
+      stroke: darken($secondary-color, 20%);
+      transition: stroke-dashoffset 0.35s;
+      transform: rotate(-90deg);
+      transform-origin: 50% 50%;
+    }
+    
+    .ring__info {
+      border-radius: 100%;
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      width: 60%;
+      height: 60%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transform: scale(0);
+      transform-origin: bottom;
+      transition: all 0.35s;
+    
+      h3 {
+        font-size: 1.2rem;
+        color: $primary-color;
+      }
+    
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  90% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

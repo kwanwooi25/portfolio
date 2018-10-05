@@ -1,0 +1,13 @@
+.footer {
+  background: linear-gradient(rgba($light-grey, 0.5), $light-grey);
+  font-size: 0.8rem;
+  text-align: center;
+  height: 30vh;
+  padding: 12vh 0;
+
+  &-transition {
+    background: linear-gradient(transparent, rgba($light-grey, 0.5));
+    height: 30vh;
+    margin-top: 2rem;
+  }
+}
