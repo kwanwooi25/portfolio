@@ -22,7 +22,7 @@ class Landing extends Component {
   }
 
   onArrowsClick = () => {
-    document.getElementById('about').scrollIntoView({ block: 'start', behavior: 'smooth' });
+    window.scroll({ top: document.getElementById('about').offsetTop - 100, behavior: 'smooth' });
   }
 
   render() {

@@ -140,3 +140,16 @@
     opacity: 1;
   }
 }
+
+@media (min-width: $break-lg) {
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    textarea,
+    .submit {
+      grid-column: 1/3;
+    }
+  }
+}

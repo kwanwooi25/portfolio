@@ -22,7 +22,8 @@
     z-index: -1;
   }
   
-  &:hover {
+  &:hover,
+  &:focus {
     color: white;
 
     &::after {

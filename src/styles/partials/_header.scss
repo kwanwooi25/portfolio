@@ -56,10 +56,15 @@
   top: 0;
   right: -100%;
   z-index: 11;
+  overflow: hidden;
 
   &.open {
     top: 70px;
     right: 15px;
+  }
+
+  .home {
+    display: none;
   }
 
   li {
@@ -106,5 +111,115 @@
     font-size: 0.5rem;
     transform-origin: center;
     transform: scale(3);
+  }
+}
+
+@media (min-width: $break-md) {
+  .nav-toggle {
+    width: 60px;
+    height: 60px;
+  
+    &.open {
+      width:  700px;
+      height: 700px;
+      top: -315px;
+      right: -315px;
+    }
+  
+    .nav-toggle-line {
+      border-radius: 2px;
+      width: 32px;
+      height: 4px;
+  
+      &.open:nth-child(1) {
+        transform: rotate(45deg) translate(0px, 15px);
+      }
+  
+      &.open:nth-child(3) {
+        transform: rotate(-45deg) translate(-3px, -12px);
+      }
+    }
+  }
+}
+
+@media (min-width: $break-lg) {
+  .nav-toggle,
+  .nav-toggle-line {
+    display: none;
+  }
+
+  .header {
+    background: rgba(white, 0.9);
+    box-shadow: 0px 1px 10px rgba(black, 0.3);
+  }
+  
+  .nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+
+    .home {
+      display: inline-block;
+      position: relative;
+      margin-left: 2rem;
+      cursor: pointer;
+
+      .site-logo,
+      .home-icon {
+        position: absolute;
+        width: 48px;
+      }
+
+      .home-icon {
+        width: 30px;
+        top: 9px;
+        left: 9px;
+        opacity: 0;
+        filter: blur(10px);
+      }
+
+      &:hover {
+        .site-logo {
+          filter: blur(10px);
+        }
+
+        .home-icon {
+          opacity: 1;
+          filter: blur(0);
+        }
+      }
+    }
+
+    ul {
+      align-items: center;
+      display: flex;
+      justify-content: flex-end;
+
+      li {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    
+        a {
+          background: transparent;
+          color: $primary-color;
+          padding: 1rem;
+          margin: 0;
+          border-radius: 0;
+
+          &:hover,
+          &.active {
+            background: $primary-color;
+            color: white;
+          }
+        }
+      }
+    }  
   }
 }

@@ -34,11 +34,17 @@ a {
 
 section {
   @extend %flex-center;
+  overflow: hidden;
 
   &::after {
     content: '';
     border-bottom: 7px dotted rgba($secondary-color, 0.5);
     width: 56px;
     margin: 7rem auto;
+  }
+
+  &:nth-child(n) {
+    max-width: 1024px;
+    margin: auto;
   }
 }

@@ -1,13 +1,15 @@
-.footer {
-  background: linear-gradient(rgba($light-grey, 0.5), $light-grey);
+#footer {
+  background: linear-gradient(transparent, $light-grey);
   font-size: 0.8rem;
   text-align: center;
-  height: 30vh;
-  padding: 12vh 0;
+  height: 50vh;
+  padding-top: 30vh;
+}
 
-  &-transition {
-    background: linear-gradient(transparent, rgba($light-grey, 0.5));
+@media (min-width: $break-md) {
+  #footer {
+    font-size: 1rem;
     height: 30vh;
-    margin-top: 2rem;
+    padding-top: 20vh;
   }
 }
