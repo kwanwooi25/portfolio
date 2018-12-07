@@ -5,6 +5,7 @@ import projectImage_3 from '../assets/project-3.png';
 import projectImage_4 from '../assets/project-4.png';
 import projectImage_5 from '../assets/project-5.png';
 import projectImage_6 from '../assets/project-6.png';
+import projectImage_7 from '../assets/project-7.png';
 
 /**
  * Navigation item list
@@ -193,43 +194,23 @@ export const SKILLS = [
 
 export const PROJECTS = [
   {
-    title: 'Responsive Website',
-    description: 'Simple mobile-first web page designed to function well on multiple screen sizes',
-    image: projectImage_1,
-    skills: ['HTML', 'CSS', 'Responsive Design'],
+    title: 'Eat Play Sleep',
+    description: 'Web app that records baby\'s activities',
+    image: projectImage_7,
+    skills: ['React', 'Styled-Components', 'Node', 'Express', 'PostgresQL', 'AWS', 'AWS S3', 'AWS EC2', 'AWS RDS'],
     links: {
-      website: 'https://kwanwooi25.github.io/techdegree-project-2',
-      github: 'https://github.com/kwanwooi25/techdegree-project-2'
+      website: 'http://www.epsapp0.com',
+      github: 'https://github.com/kwanwooi25/eat-play-sleep'
     }
   },
   {
-    title: 'Style Guide',
-    description: 'a style guide using sass including partials, variables, extends, mixins, and BEM classes',
-    image: projectImage_2,
-    skills: ['HTML', 'Sass', 'BEM'],
+    title: 'Memory Game',
+    description: 'A simple memory game built with vanilla JavaScript',
+    image: projectImage_6,
+    skills: ['HTML', 'CSS', 'JavaScript'],
     links: {
-      website: 'https://kwanwooi25.github.io/techdegree-project-5',
-      github: 'https://github.com/kwanwooi25/techdegree-project-5'
-    }
-  },
-  {
-    title: 'Interactive Video Player',
-    description: 'an HTML5 video player using JavaScript and the MediaElement.js',
-    image: projectImage_3,
-    skills: ['HTML', 'CSS', 'JavaScript', 'HTML5 Videos', 'MediaElement.js'],
-    links: {
-      website: 'https://kwanwooi25.github.io/techdegree-project-7',
-      github: 'https://github.com/kwanwooi25/techdegree-project-7'
-    }
-  },
-  {
-    title: 'Web App Dashboard',
-    description: 'a Dashboard page that has multiple widgets such as chart, social stats, members and activities.',
-    image: projectImage_4,
-    skills: ['HTML', 'CSS', 'JavaScript', 'chart.js', 'RandomUser API'],
-    links: {
-      website: 'https://kwanwooi25.github.io/techdegree-project-9',
-      github: 'https://github.com/kwanwooi25/techdegree-project-9'
+      website: 'https://kwanwooi25.github.io/memory-game',
+      github: 'https://github.com/kwanwooi25/memory-game'
     }
   },
   {
@@ -243,13 +224,43 @@ export const PROJECTS = [
     }
   },
   {
-    title: 'Memory Game',
-    description: 'A simple memory game built with vanilla JavaScript',
-    image: projectImage_6,
-    skills: ['HTML', 'CSS', 'JavaScript'],
+    title: 'Web App Dashboard',
+    description: 'a Dashboard page that has multiple widgets such as chart, social stats, members and activities.',
+    image: projectImage_4,
+    skills: ['HTML', 'CSS', 'JavaScript', 'chart.js', 'RandomUser API'],
     links: {
-      website: 'https://kwanwooi25.github.io/memory-game',
-      github: 'https://github.com/kwanwooi25/memory-game'
+      website: 'https://kwanwooi25.github.io/techdegree-project-9',
+      github: 'https://github.com/kwanwooi25/techdegree-project-9'
     }
-  }
+  },
+  {
+    title: 'Interactive Video Player',
+    description: 'an HTML5 video player using JavaScript and the MediaElement.js',
+    image: projectImage_3,
+    skills: ['HTML', 'CSS', 'JavaScript', 'HTML5 Videos', 'MediaElement.js'],
+    links: {
+      website: 'https://kwanwooi25.github.io/techdegree-project-7',
+      github: 'https://github.com/kwanwooi25/techdegree-project-7'
+    }
+  },
+  {
+    title: 'Style Guide',
+    description: 'a style guide using sass including partials, variables, extends, mixins, and BEM classes',
+    image: projectImage_2,
+    skills: ['HTML', 'Sass', 'BEM'],
+    links: {
+      website: 'https://kwanwooi25.github.io/techdegree-project-5',
+      github: 'https://github.com/kwanwooi25/techdegree-project-5'
+    }
+  },
+  {
+    title: 'Responsive Website',
+    description: 'Simple mobile-first web page designed to function well on multiple screen sizes',
+    image: projectImage_1,
+    skills: ['HTML', 'CSS', 'Responsive Design'],
+    links: {
+      website: 'https://kwanwooi25.github.io/techdegree-project-2',
+      github: 'https://github.com/kwanwooi25/techdegree-project-2'
+    }
+  },
 ];
