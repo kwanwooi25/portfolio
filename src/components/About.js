@@ -8,7 +8,7 @@ const About = () => {
       <h1 className="section-title">About</h1>
       <div className="about">
         <p>
-          I'm a web developer based in Namyangju, Korea (near Seoul). I recently finished Treehouse Front End Web Development Techdegree while I was teaching myself with other various materials such as Udemy cources, Youtube tutorials and blog posts. I am currently open to any job opportunities that could allow me put the skills I have learned so far and learn new things! Please feel free to look around and get in touch!
+          I am a frontend web developer at <a href="https://www.studiomate.kr" target="_blank" rel="noopener noreferrer">StudioMate</a> located in Seoul, Korea. I love to code and learn new things! Please feel free to look around and get in touch!
         </p>
       </div>
       <button className="button download-button" onClick={() => { window.open(Resume, '_blank') }}>

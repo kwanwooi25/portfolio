@@ -6,6 +6,15 @@
     line-height: 1.5;
     padding: 1rem;
     text-align: center;
+
+    a {
+      color: $primary-color;
+      text-decoration: underline;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 
   .download-button {
